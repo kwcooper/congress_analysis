@@ -1,0 +1,10 @@
+rollCodes = {0:'Not a member',
+			1:'Yea',
+			2:'Paired Yea',
+			3:'Announced Yea',
+			4:'Announced Nay',
+			5:'Paired Nay',
+			6:'Nay',
+			7:'Present (some Congresses)',
+			8:'Present (some Congresses)',
+			9:'Not Voting (Abstention)'}
