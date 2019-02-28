@@ -58,8 +58,8 @@ def download2():
 			print("--- in %s seconds ---" %(time.time() - start_time))
 			session += 1
 
-def download3():
-			
+
+def download3(): # Try to grab a bunch of them
 			
 			for congress_num in range(110,112):
 				
@@ -92,7 +92,9 @@ def download3():
 								print(url)
 								break
 
-						file_name = "/home/wade/codingCoop/congress/scrapeData/" + str(congress_num) + str(session) + "_" + str(vote) + ".xml"
+						
+						file_name = "/home/wade/Documents/Datasets/senateRecordsScraped/" + str(congress_num) + str(session) + "_" + str(vote) + ".xml"
+						#file_name = "/home/wade/codingCoop/congress/scrapeData/" + str(congress_num) + str(session) + "_" + str(vote) + ".xml"
 						with open(file_name, "wb") as file:
 							file.write(response.content)
 							#print("Wrote", file_name)
@@ -103,7 +105,7 @@ def download3():
 					print("--- in %s seconds ---" %(time.time() - start_time))
 
 
-def download4():
+def download4(): # test to download one file
 			
 			congress_num = 111
 			session = 2
@@ -121,6 +123,7 @@ def download4():
 				print(url)
 				
 			else:
+				#file_name = "/home/wade/codingCoop/congress/scrapeData/" + str(congress_num) + str(session) + "_" + str(vote) + ".xml"
 				file_name = "/home/wade/codingCoop/congress/scrapeData/" + str(congress_num) + str(session) + "_" + str(vote) + ".xml"
 				with open(file_name, "wb") as file:
 					file.write(response.content)
